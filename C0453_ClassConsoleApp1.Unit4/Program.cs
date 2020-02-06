@@ -12,7 +12,8 @@ namespace C0453_ClassConsoleApp1.Unit4
 
             Console.WriteLine("Georgia's Distance Converter");
             DistanceConverter converter = new DistanceConverter();
-            feet = converter.ToFeet(miles);
+
+          // miles = converter.GetDouble("Miles");
             Console.WriteLine(" The no of feet = " + feet);
 
             miles = converter.ToMiles(7260*3);
