@@ -74,8 +74,16 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
         }
         public void WriteChapter2()
         {
+            Console.Clear();
+        }
+        
+        
+
+        
+        
+        
 
         }
     }
-}
+
 
