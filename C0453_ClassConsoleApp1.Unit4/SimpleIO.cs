@@ -10,7 +10,7 @@ namespace C0453_ClassConsoleApp1.Unit4
     /// </summary>
     class SimpleIO
     {
-        public const string AUTHOR = "Derek Peacock";
+        public const string AUTHOR = "Georgia Gkegka";
 
         public static void WriteTitle(string title, string task)
         {

@@ -23,6 +23,8 @@ namespace C0453_ClassConsoleApp1.Unit4
         {
             Book book = new Book();
 
+            SimpleIO.WriteTitle("Horror Story", "Task 4.1");
+               
             book.GetDetails();
             book.WriteChapter1();
         }
@@ -36,7 +38,7 @@ namespace C0453_ClassConsoleApp1.Unit4
             double miles = 1;
             double feet = 0;
 
-            Console.WriteLine("Derek's Distance Converter");
+            Console.WriteLine("Georgia's Distance Converter");
 
             DistanceConverter converter = new DistanceConverter();
 
