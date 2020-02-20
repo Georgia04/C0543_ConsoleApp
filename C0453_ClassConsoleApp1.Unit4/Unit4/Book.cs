@@ -9,8 +9,8 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
     /// 
     /// For Tasks 4.2 and 4.3 
     /// 
-    /// Author      : Dr Derek Peacock
-    /// Modified by : Student Name
+    /// Author      : Georgia Gkegka
+    /// Modified by : Georgia Gkegka
     /// </summary>
 
 
@@ -72,18 +72,36 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
             Console.WriteLine("In the shadow of a doorway, a demented " + job
                 + " waited, clutching a menacing " + weapon);
         }
+        /// <summary>
+        /// This method creates a the second chapter of a story using 
+        /// all the attributes of the class
+        /// </summary>
         public void WriteChapter2()
         {
-            Console.Clear();
-        }
-        
-        
+            Console.WriteLine();
+            Console.WriteLine();
 
-        
-        
-        
+            Console.WriteLine("It was a dark night in " + town + " and " + name
+                + " could hear " + animal + "s screaming in the distance.");
 
+            Console.WriteLine(name + " staggered terrified through the streets of "
+                + town + ", realising he had been followed.");
+
+            Console.WriteLine("In the shadow of a doorway, a demented " + job
+                + " waited, clutching a menacing " + weapon);
         }
     }
 
+} 
+            
+
+        
+        
+
+        
+        
+        
+
+        
+    
 
