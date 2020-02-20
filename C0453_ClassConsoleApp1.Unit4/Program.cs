@@ -13,6 +13,18 @@ namespace C0453_ClassConsoleApp1.Unit4
         {
             //TestDistanceConverter(); // T4.1
             TestBook(); // T4.2 and T4.3
+            //TestTournament();
+        }
+
+         /// <summary>
+         /// Task 5.1 Create a new Tournament abject 
+         /// and get the scores for each player and show them
+         /// </summary>
+        private static void TestTournament()
+        {
+            Tournament tournament = new Tournament();
+            tournament.GetScores();
+            tournament.ShowScores();
         }
 
         /// <summary>
