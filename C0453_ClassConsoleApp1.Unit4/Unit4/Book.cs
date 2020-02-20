@@ -9,20 +9,32 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
     /// 
     /// For Tasks 4.2 and 4.3 
     /// 
-    /// Author      : Georgia Gkegka
+    /// Author      : Dr Derek Peacock
     /// Modified by : Georgia Gkegka
     /// </summary>
-
-
-    class Book
+    public class Book
     {
         // Attributes of Book
 
         private string author, name, town;
         private string animal, weapon, job;
+        private string gender, attack, body;
+        /// <summary>
+        /// This method will initialise all the elements of the story
+        /// to default values
+        /// </summary>
 
         public Book()
         {
+            author = SimpleIO.AUTHOR;
+            name = " Froso";
+            town = "Aylesbury";
+            animal = "dog";
+            weapon = "candlestick";
+            job = "doctor";
+            gender = "she";
+            attack = "clobbered";
+            body = "head";
 
         }
         /// <summary>
@@ -50,6 +62,9 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
             animal = GetString("Now a type of animal : ");
             job = GetString("Now a type of job : ");
             weapon = GetString("And your weapon of choice : ");
+            gender = GetString("What gender is your friend ( he/she):");
+            attack = GetString("What form of attack:");
+            body = GetString("What part of the body was attacked:");
         }
 
         /// <summary>
@@ -60,14 +75,14 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
         {
             Console.Clear();
 
-            Console.WriteLine("A Horror Story : by " + author);
+            Console.WriteLine("Horror Story", "4.2");
             Console.WriteLine("===============================");
 
             Console.WriteLine("It was a dark night in " + town + " and " + name
                 + " could hear " + animal + "s screaming in the distance.");
 
             Console.WriteLine(name + " staggered terrified through the streets of "
-                + town + ", realising he had been followed.");
+                + town + ", realising" + "had been followed.");
 
             Console.WriteLine("In the shadow of a doorway, a demented " + job
                 + " waited, clutching a menacing " + weapon);
