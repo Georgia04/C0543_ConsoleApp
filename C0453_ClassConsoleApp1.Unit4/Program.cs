@@ -8,6 +8,7 @@ namespace C0453_ClassConsoleApp1.Unit4
     {
         /// <summary>
         /// This method is called first when the program is executed
+        /// author: Georgia
         /// </summary>
         static void Main(string[] args)
         {
