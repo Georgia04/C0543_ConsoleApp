@@ -12,8 +12,9 @@ namespace C0453_ClassConsoleApp1.Unit4
         static void Main(string[] args)
         {
             //TestDistanceConverter(); // T4.1
-            TestBook(); // T4.2 and T4.3
+            //TestBook(); // T4.2 and T4.3
             //TestTournament();
+            //TestMP3Chart();
         }
 
          /// <summary>
@@ -68,6 +69,22 @@ namespace C0453_ClassConsoleApp1.Unit4
 
         }
 
+        private static void TestMP3Chart()
+        {
+            MP3Chart MP3 = new MP3Chart();
+            MP3.ShowSongs();
+
+            bool finish = false;
+
+            while (!finish)
+            {
+                int songNo = MP3.GetVotes();
+                if (songNo == 0) finish = true;
+
+            }
+
+            MP3.ShowVotes();
+        }
         /// <summary>
         /// A simple room booking system
         /// </summary>

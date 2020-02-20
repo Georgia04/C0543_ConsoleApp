@@ -23,7 +23,8 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
         /// This method will initialise all the elements of the story
         /// to default values
         /// </summary>
-
+        
+        //The Constructor
         public Book()
         {
             author = SimpleIO.AUTHOR;
