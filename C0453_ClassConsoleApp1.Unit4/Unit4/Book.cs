@@ -19,7 +19,7 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
         private string author, name, town;
         private string animal, weapon, job;
         private string gender, attack, body;
-        private string street, noise;
+        private string street, noise, thing;
         /// <summary>
         /// This method will initialise all the elements of the story
         /// to default values
@@ -37,6 +37,9 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
             gender = "she";
             attack = "clobbered";
             body = "head";
+            street = "harry mews";
+            noise = "siren";
+            thing = "knife";
 
         }
         /// <summary>
@@ -69,6 +72,7 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
             body = GetString("What part of the body was attacked:");
             street = GetString("Name of the street:");
             noise = GetString(" What kinf of noise:");
+            thing = GetString(" What kind of thing:");
         }
 
         /// <summary>
@@ -99,8 +103,8 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
         {
             SimpleIO.WriteTitle("Chapter Two", "Horror Story");
             Console.WriteLine("On Tuesday" + name + "was attacked by a thief on the" + street + "out of her home");
-            Console.WriteLine("While" + name + "was running to escape, suddenly she heard" + noise + ", the police was there";
-            Console.WriteLine()
+            Console.WriteLine("While" + name + "was running to escape, suddenly she heard" + noise + ", the police was there");
+            Console.WriteLine("Finally" + name + "was injured by" + thing + " in front the police");
 
          
         }
