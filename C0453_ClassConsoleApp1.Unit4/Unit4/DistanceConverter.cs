@@ -27,7 +27,7 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
 
         public double ToMiles(double feet)
         {
-            return feet / 1760.00 * 3;
+            return feet / (1760.00 * 3);
         }
         ///summary
         ///This method will prompt the user to enter the

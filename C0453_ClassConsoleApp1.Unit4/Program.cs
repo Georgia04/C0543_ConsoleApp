@@ -1,6 +1,7 @@
 ﻿using C0453_ClassConsoleApp1.Unit4.Unit4;
 using C0453_ClassConsoleApp1.Unit4.Unit5;
 using System;
+using C0453_ClassConsoleApp1.Unit4.SPS;
 
 namespace C0453_ClassConsoleApp1.Unit4
 {
@@ -16,12 +17,19 @@ namespace C0453_ClassConsoleApp1.Unit4
             //TestBook(); // T4.2 and T4.3
             //TestTournament();
             //TestMP3Chart();
+            //TestGame();
         }
 
-         /// <summary>
-         /// Task 5.1 Create a new Tournament abject 
-         /// and get the scores for each player and show them
-         /// </summary>
+        private static void TestGame()
+        {
+            GameContoller game = new GameContoller();
+            game.RunGame();
+        }
+
+        /// <summary>
+        /// Task 5.1 Create a new Tournament abject 
+        /// and get the scores for each player and show them
+        /// </summary>
         private static void TestTournament()
         {
             Tournament tournament = new Tournament();
@@ -39,8 +47,9 @@ namespace C0453_ClassConsoleApp1.Unit4
 
             SimpleIO.WriteTitle("Horror Story", "Task 4.1");
                
-            book.GetDetails();
+            //book.GetDetails();
             book.WriteChapter1();
+            book.WriteChapter2();
         }
 
         /// <summary>
@@ -122,3 +131,6 @@ namespace C0453_ClassConsoleApp1.Unit4
         }
     }
 }
+
+
+
