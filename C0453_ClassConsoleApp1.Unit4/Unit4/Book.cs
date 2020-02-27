@@ -21,11 +21,8 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
         private string gender, attack, body;
         private string street, noise, thing;
         /// <summary>
-        /// This method will initialise all the elements of the story
+        /// This constructor will initialise all the elements of the story
         /// to default values
-        /// </summary>
-        
-        //The Constructor for task 4.3
         public Book()
         {
             author = SimpleIO.AUTHOR;

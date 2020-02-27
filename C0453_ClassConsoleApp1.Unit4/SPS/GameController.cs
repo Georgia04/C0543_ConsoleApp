@@ -4,6 +4,10 @@ using System.Text;
 
 namespace C0453_ClassConsoleApp1.Unit4.SPS 
 { 
+    /// <summary>
+    /// This class will handle the input and output 
+    /// of the RPS Game
+    /// </summary>
     public class GameContoller 
     {
 
@@ -24,6 +28,9 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
     {
         SetupScreen();
         StartGame();
+        Console.Write("Please enter your name ");
+            string userName = Console.ReadLine();
+
 
         for (turn = 1; turn <= MAXN_TURNS; turn++)
         {
@@ -141,7 +148,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
         DrawChoice(RPS_Players.PLAYER);
         DrawChoice(RPS_Players.COMPUTER);
 
-        Console.WriteLine("\n\tYou picked " + game.PlayerChoice);
+        Console.WriteLine("\n\t" + game.PlayerName + " picked " + game.PlayerChoice);
         Console.WriteLine("\tThe computer choice is " + game.ComputerChoice);
         Console.WriteLine();
     }

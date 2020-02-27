@@ -16,7 +16,8 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit5
         private string[] chart;
         private int[] votes = new int[MAXN_SONGS];
 
-        public MP3Chart()
+
+       public MP3Chart()
         {
             chart = new string[]
             {
