@@ -19,6 +19,7 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
         private string author, name, town;
         private string animal, weapon, job;
         private string gender, attack, body;
+        private string street, noise;
         /// <summary>
         /// This method will initialise all the elements of the story
         /// to default values
@@ -66,6 +67,8 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
             gender = GetString("What gender is your friend ( he/she):");
             attack = GetString("What form of attack:");
             body = GetString("What part of the body was attacked:");
+            street = GetString("Name of the street:");
+            noise = GetString(" What kinf of noise:");
         }
 
         /// <summary>
@@ -94,17 +97,12 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
         /// </summary>
         public void WriteChapter2()
         {
-            Console.WriteLine();
-            Console.WriteLine();
+            SimpleIO.WriteTitle("Chapter Two", "Horror Story");
+            Console.WriteLine("On Tuesday" + name + "was attacked by a thief on the" + street + "out of her home");
+            Console.WriteLine("While" + name + "was running to escape, suddenly she heard" + noise + ", the police was there";
+            Console.WriteLine()
 
-            Console.WriteLine("It was a dark night in " + town + " and " + name
-                + " could hear " + animal + "s screaming in the distance.");
-
-            Console.WriteLine(name + " staggered terrified through the streets of "
-                + town + ", realising he had been followed.");
-
-            Console.WriteLine("In the shadow of a doorway, a demented " + job
-                + " waited, clutching a menacing " + weapon);
+         
         }
     }
 
