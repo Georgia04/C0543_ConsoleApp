@@ -128,6 +128,25 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
             }
 
         }
+        public void GameWinner() 
+        {
+            if (PlayerScore > ComputerScore)
+            {
+                Console.WriteLine("The winner is" + PlayerName);
+                Images.DrawThumbsUp();
+            }
+            else if (PlayerScore < ComputerScore)
+            {
+                Console.WriteLine("The winner is the" + COMPUTER_NAME);
+                Images.DrawThumbsDown();
+            }
+            else 
+            {
+                Console.WriteLine("It's a draw");
+                Images.DrawSmile();
+            }
+
+        }
     }
             
                 

@@ -27,9 +27,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
     public void RunGame()
     {
         SetupScreen();
-        StartGame();
-        Console.Write("Please enter your name ");
-            string userName = Console.ReadLine();
+            StartGame();
 
 
         for (turn = 1; turn <= MAXN_TURNS; turn++)
@@ -49,18 +47,19 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
 
         game.End();
 
-        EndGame();
+            EndGame();
+
+             
     }
 
     /// <summary>
     /// 
     /// </summary>
-    private void EndGame()
+    public void EndGame()
     {
         Console.Clear();
         SimpleIO.WriteTitle(Title, "Week 3");
-
-        Console.WriteLine("The overall winner is " + game.WinnerName);
+        game.GameWinner();
     }
 
     /// <summary>
@@ -194,9 +193,12 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
     /// *******************************************************
     /// </summary>
     private void StartGame()
+
     {
+            Console.WriteLine("What's your name");
+            string userName = Console.ReadLine();
         SimpleIO.WriteTitle(Title, "Week 3");
-        game.Start("Derek");
+            game.Start(userName);
     }
 }
  

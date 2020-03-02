@@ -15,10 +15,19 @@ namespace C0453_ClassConsoleApp1.Unit4
         {
             //TestDistanceConverter(); // T4.1
             //TestBook(); // T4.2 and T4.3
-            //TestTournament();
-            //TestMP3Chart();
+            //TestTournament(); //5.1 AND 5.3
+            //TestMP3Chart();   //5.2
             TestGame();
+            //TestBMI();
+            
         }
+        private static void TestBMI() 
+        {
+            BMI bMI = new BMI();
+
+        }
+            
+          
 
         private static void TestGame()
         {
