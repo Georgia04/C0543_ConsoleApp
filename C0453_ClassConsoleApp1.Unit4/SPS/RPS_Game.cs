@@ -132,12 +132,12 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
         {
             if (PlayerScore > ComputerScore)
             {
-                Console.WriteLine("The winner is" + PlayerName);
+                Console.WriteLine("The winner is " + PlayerName);
                 Images.DrawThumbsUp();
             }
             else if (PlayerScore < ComputerScore)
             {
-                Console.WriteLine("The winner is the" + COMPUTER_NAME);
+                Console.WriteLine("The winner is the " + COMPUTER_NAME);
                 Images.DrawThumbsDown();
             }
             else 

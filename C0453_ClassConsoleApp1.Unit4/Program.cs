@@ -13,11 +13,11 @@ namespace C0453_ClassConsoleApp1.Unit4
         /// </summary>
         static void Main(string[] args)
         {
-            //TestDistanceConverter(); // T4.1
+            TestDistanceConverter(); // T4.1
             //TestBook(); // T4.2 and T4.3
             //TestTournament(); //5.1 AND 5.3
             //TestMP3Chart();   //5.2
-            TestGame();
+            //TestGame();
             //TestBMI();
             
         }
@@ -74,19 +74,51 @@ namespace C0453_ClassConsoleApp1.Unit4
 
             DistanceConverter converter = new DistanceConverter();
 
-            miles = SimpleIO.GetDouble("Miles");
-            feet = converter.ToFeet(miles);
+            int choice = 3;
 
-            Console.WriteLine("The no of Miles = " + miles);
-            Console.WriteLine("The no of feet = " + feet);
+            string[] choices = new string[]
+            {
+             "1. Convert Miles to Feet" ,
+             "2. Convert Feet to Miles" ,
+             "3. Quick Test"
 
-            feet = SimpleIO.GetDouble("Feet");
-            miles = converter.ToMiles(feet);
+            };
 
-            Console.WriteLine("The no of feet = " + feet);
-            Console.WriteLine("The no of miles = " + miles);
+            do
+            {
+                choice = SimpleIO.GetChoice(choices);
 
-        }
+                if (choice == 1)
+                {
+                    miles = converter.GetDouble("Miles");
+                    feet = converter.ToFeet(miles);
+
+                    Console.WriteLine("The no of miles = " + miles);
+                    Console.WriteLine("The no of feet = " + feet);
+                }
+                else if (choice == 2)
+                {
+                    feet = converter.GetDouble("Feet");
+                    miles = converter.ToMiles(feet);
+
+                    Console.WriteLine("The no of feet = " + feet);
+                    Console.WriteLine("The no of miles = " + miles);
+                }
+
+
+
+            } while (choice != 3);
+
+
+            
+
+        } 
+
+
+
+
+
+       
 
         private static void TestMP3Chart()
         {
