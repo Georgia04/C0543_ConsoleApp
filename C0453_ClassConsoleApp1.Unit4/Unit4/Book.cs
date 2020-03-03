@@ -5,40 +5,40 @@ using System.Text;
 namespace C0453_ClassConsoleApp1.Unit4.Unit4
 {
     /// <summary>
-    /// This class ...
-    /// 
+    /// This class will Create a Book object and test that
+    /// it writes chapter 1 and 2 and create a constructor method
+    /// for 4.3
     /// For Tasks 4.2 and 4.3 
-    /// 
-    /// Author      : Dr Derek Peacock
+    /// Author      : Georgia Gkegka
     /// Modified by : Georgia Gkegka
     /// </summary>
     public class Book
     {
         // Attributes of Book
-
         private string author, name, town;
         private string animal, weapon, job;
         private string gender, attack, body;
         private string street, noise, thing;
+
         /// <summary>
         /// This constructor will initialise all the elements of the story
         /// to default values
         public Book()
         {
             author = SimpleIO.AUTHOR;
-            name = " Froso";
+            name = "Froso";
             town = "Aylesbury";
             animal = "dog";
-            weapon = "candlestick";
             job = "doctor";
+            weapon = "candlestick";
             gender = "she";
             attack = "clobbered";
             body = "head";
             street = "harry mews";
             noise = "siren";
             thing = "knife";
-
         }
+
         /// <summary>
         /// Prompt the user for an answer as a string and return it
         /// </summary>
@@ -79,10 +79,8 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
         public void WriteChapter1()
         {
             Console.Clear();
-
-            Console.WriteLine("Horror Story", "4.2");
-            Console.WriteLine("===============================");
-
+            SimpleIO.WriteTitle("Chapter One", "Horror Story");
+            
             Console.WriteLine("It was a dark night in " + town + " and " + name
                 + " could hear " + animal + "s screaming in the distance.");
 
@@ -92,6 +90,7 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
             Console.WriteLine("In the shadow of a doorway, a demented " + job
                 + " waited, clutching a menacing " + weapon);
         }
+
         /// <summary>
         /// This method creates a the second chapter of a story using 
         /// all the attributes of the class
@@ -99,14 +98,16 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
         public void WriteChapter2()
         {
             SimpleIO.WriteTitle("Chapter Two", "Horror Story");
-            Console.WriteLine("On Tuesday" + name + "was attacked by a thief on the" + street + "out of her home");
-            Console.WriteLine("While" + name + "was running to escape, suddenly she heard" + noise + ", the police was there");
-            Console.WriteLine("Finally" + name + "was injured by" + thing + " in front the police");
 
-         
+            Console.WriteLine(" On Tuesday " + name + " was attacked by a thief in "
+            + street + " out of her home. ");
+
+            Console.WriteLine(" While " + name + " was running to escape, suddenly she heard "
+            + noise + " , the police was there. ");
+
+            Console.WriteLine(" Finally " + name + " was injured by " + thing + " in front the police. ");
         }
     }
-
 } 
             
 
