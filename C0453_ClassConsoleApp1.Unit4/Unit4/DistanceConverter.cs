@@ -18,7 +18,6 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
         public double ToFeet(double miles)
         {
             return miles * 1760.00 * 3;
-
         }
 
         /// </summary>
