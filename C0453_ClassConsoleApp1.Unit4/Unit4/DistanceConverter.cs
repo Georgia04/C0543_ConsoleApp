@@ -4,11 +4,10 @@ using System.Text;
 
 namespace C0453_ClassConsoleApp1.Unit4.Unit4
 {
-    /// <summary>
+     /// <summary>
     /// This class will convert miles to whole feet, or feet to miles.
-    /// 
-    /// Author: Georgia Gkegka
-    /// </summary>
+   /// Author: Georgia Gkegka
+  /// </summary>
     public class DistanceConverter
     {
         /// </summary>
@@ -22,7 +21,6 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
 
         }
 
-
         /// </summary>
         /// This method will take a number of feet and convert them to miles
         /// </summary>
@@ -31,7 +29,6 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit4
         {
             return feet / (1760.00 * 3);
         }
-
 
         ///summary
         ///This method will prompt the user to enter the
