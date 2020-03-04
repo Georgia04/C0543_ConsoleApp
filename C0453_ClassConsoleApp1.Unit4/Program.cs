@@ -14,17 +14,17 @@ namespace C0453_ClassConsoleApp1.Unit4
         static void Main(string[] args)
         {
            // TestDistanceConverter(); // T4.1
-            TestBook(); // T4.2 and T4.3
+            //TestBook(); // T4.2 and T4.3
             //TestTournament(); //5.1 AND 5.3
             //TestMP3Chart();   //5.2
             //TestGame();
-            //TestBMI();
+           TestBMI();
             
         }
-        private static void TestBMI() 
+        public static void TestBMI() 
         {
             BMI bMI = new BMI();
-
+            BMI.Calculator();
         }
             
           
