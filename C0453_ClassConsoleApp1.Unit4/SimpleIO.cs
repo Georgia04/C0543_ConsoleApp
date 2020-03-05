@@ -121,6 +121,7 @@ namespace C0453_ClassConsoleApp1.Unit4
         /// This method displays a menu of choices and the user
         /// can select one by entering a valid number 
         /// </summary>
+        
         public static int GetChoice(string[] choices)
         {
             int choiceNo = 0;

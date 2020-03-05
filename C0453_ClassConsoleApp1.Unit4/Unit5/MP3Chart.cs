@@ -4,11 +4,12 @@ using System.Text;
 
 namespace C0453_ClassConsoleApp1.Unit4.Unit5
 {
+
     /// <summary>
     /// Task 5.2 Class Example
     /// This class get votes for an array of song titles currently
     /// in the top ten uk chart
-    /// Derek Peacock
+    /// Georgia Gkegka
     /// </summary>
     public class MP3Chart
     {
@@ -16,24 +17,31 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit5
         private string[] chart;
         private int[] votes = new int[MAXN_SONGS];
 
-
+        /// <summary>
+        /// In this constructor I will add the list of songs
+        /// </summary>
        public MP3Chart()
         {
             chart = new string[]
             {
-                "Don't Start Now",
+                "Post Blue",
                 "Dance Monkey",
-                "Own It",
-                "Blinding Lights",
-                "The Box",
-                "This is Real",
+                "Do I Wanna Know",
+                "Personal Jesus",
+                "Nevermind",
+                "Sirens",
                 "Good as Hell",
-                "South of the Border",
+                "Every Me Every You",
                 "Physical",
                 "Post Malone"
             };
         }
 
+        /// <summary>
+        /// Prints the title, gets user's song choice
+        /// and then adds one onto the total votes.
+        /// </summary>
+        /// <returns></returns>
         public int GetVotes()
         {
             SimpleIO.WriteTitle("Vote for UK Top 10 Chart Singles", "Task 5.2");
@@ -47,7 +55,9 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit5
             return songNo;
         }
 
-
+        /// <summary>
+        /// Begins by showing the song choice to the user.
+        /// </summary>
         public void ShowVotes()
         {
             SimpleIO.WriteTitle("UK Top 10 Chart Singles", "Task 5.2");
@@ -60,9 +70,11 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit5
                 Console.WriteLine(" No of votes is " + votes[index]);
                 index++;
             }
-
         }
 
+        /// <summary>
+        /// Begins by showing the song choice to the user.
+        /// </summary>
         public void ShowSongs()
         {
             SimpleIO.WriteTitle("UK Top 10 Chart Singles", "Task 5.2");

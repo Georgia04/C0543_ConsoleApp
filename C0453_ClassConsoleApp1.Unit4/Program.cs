@@ -15,8 +15,8 @@ namespace C0453_ClassConsoleApp1.Unit4
         {
            // TestDistanceConverter(); // T4.1
             //TestBook(); // T4.2 and T4.3
-            TestTournament(); //5.1 AND 5.3
-            //TestMP3Chart();   //5.2
+            //TestTournament(); //5.1 AND 5.3
+            TestMP3Chart();   //5.2
             //TestGame();
            //TestBMI();
             
@@ -27,9 +27,7 @@ namespace C0453_ClassConsoleApp1.Unit4
             BMI.Calculator();
         }
             
-          
-
-        private static void TestGame()
+         private static void TestGame()
         {
             GameContoller game = new GameContoller();
             game.RunGame();
@@ -104,21 +102,13 @@ namespace C0453_ClassConsoleApp1.Unit4
                     Console.WriteLine("The no of miles = " + miles);
                 }
 
-
-
             } while (choice != 3);
-
-
-            
-
         } 
 
-
-
-
-
-       
-
+         ///<summary>
+        /// Task 5.2. Create a list of song tracks and get vote
+        /// for the favourite one.
+        /// </summary>
         private static void TestMP3Chart()
         {
             MP3Chart MP3 = new MP3Chart();
@@ -135,6 +125,7 @@ namespace C0453_ClassConsoleApp1.Unit4
 
             MP3.ShowVotes();
         }
+
         /// <summary>
         /// A simple room booking system
         /// </summary>
