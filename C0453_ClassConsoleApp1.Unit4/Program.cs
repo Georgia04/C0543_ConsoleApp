@@ -5,6 +5,13 @@ using C0453_ClassConsoleApp1.Unit4.SPS;
 
 namespace C0453_ClassConsoleApp1.Unit4
 {
+    /// <summary>
+   /// This class creates objects for each of the tasks and tests
+   /// that each object works.
+   /// 
+   ///Objects are: Distance Converter, Book, Tournament, 
+   ///MP3 Chart, Body Mass Index, Motel Booking and RPS Game.
+  /// </summary>
     class Program
     {
         /// <summary>
@@ -13,12 +20,13 @@ namespace C0453_ClassConsoleApp1.Unit4
         /// </summary>
         static void Main(string[] args)
         {
-           // TestDistanceConverter(); // T4.1
+           //TestDistanceConverter(); // T4.1
             //TestBook(); // T4.2 and T4.3
             //TestTournament(); //5.1 AND 5.3
-            TestMP3Chart();   //5.2
+            //TestMP3Chart();   //5.2
             //TestGame();
-           //TestBMI();
+           //TestBMI(); //4.4
+           TestMotelBooking(); //5.6
             
         }
         private static void TestBMI() 
@@ -131,37 +139,13 @@ namespace C0453_ClassConsoleApp1.Unit4
         /// </summary>
         private static void TestMotelBooking()
         {
-            BatesMotel motel = new BatesMotel();
-
-            SimpleIO.WriteTitle("The Bates Motel", "Task 5.6");
-
-            string[] choices =
-            {
-                "1. Book a Room",
-                "2. Vacate a Room",
-                "3. Display All Rooms",
-                "4. Vacate All Rooms",
-                "5. Quit"
-            };
-
-            int choice = SimpleIO.GetChoice(choices);
-
-            switch (choice)
-            {
-                case 1:
-                    //.Book(1, 2);
-                    break;
-
-                default:
-                    break;
-               
-
-
-            }
-
+            RunBatesMotel runBatesMotel = new RunBatesMotel();
+            runBatesMotel.MotelRooms();
+            runBatesMotel.RunBates();
         }
     }
 }
+
 
 
 
