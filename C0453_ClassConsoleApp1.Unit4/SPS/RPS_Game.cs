@@ -18,6 +18,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
         PAPER,
         SCISSORS,
     }
+
     /// <summary>
     /// This class runs the game
     /// The computer chooses a number, and so does the user
@@ -79,8 +80,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
         
     }
 
-
-        /// <summary>
+         /// <summary>
         /// *******************************************************
         /// This will dertemine whether the computer has won / drawn
         /// or the player has won / drawn

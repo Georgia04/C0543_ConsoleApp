@@ -24,7 +24,7 @@ namespace C0453_ClassConsoleApp1.Unit4
             //TestBook(); // T4.2 and T4.3
             //TestTournament(); //5.1 AND 5.3
             //TestMP3Chart();   //5.2
-            //TestGame();
+            //TestGame(); 6.0
            //TestBMI(); //4.4
           //TestMotelBooking(); //5.6
           //TestBubbleSort(); //5.4

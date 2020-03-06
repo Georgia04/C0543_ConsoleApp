@@ -163,7 +163,6 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
         Console.WriteLine("\tThe computer has won ");
     }
 
-
     /// <summary>
     /// *******************************************************
     /// Sets the title, window size, colours and clears the console.
