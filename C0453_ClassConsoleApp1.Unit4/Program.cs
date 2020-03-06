@@ -26,16 +26,26 @@ namespace C0453_ClassConsoleApp1.Unit4
             //TestMP3Chart();   //5.2
             //TestGame();
            //TestBMI(); //4.4
-           TestMotelBooking(); //5.6
-            
+          //TestMotelBooking(); //5.6
+          TestBubbleSort(); //5.4
         }
+
         private static void TestBMI() 
         {
             BMI bMI = new BMI();
             BMI.Calculator();
         }
-            
-         private static void TestGame()
+
+        private static void TestBubbleSort()
+        {
+            Bubble NSort = new Bubble();
+
+            NSort.InputNumbers();
+            NSort.DisplayNumbers();
+            NSort.SortNumbers();
+        }
+
+        private static void TestGame()
         {
             GameContoller game = new GameContoller();
             game.RunGame();
