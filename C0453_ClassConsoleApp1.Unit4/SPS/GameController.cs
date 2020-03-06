@@ -11,7 +11,6 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
     public class GameContoller 
     {
 
-    
     public static string Title = "Scissors-Paper-Stone Game";
 
     public const string ROCK = "ROCK";
@@ -48,12 +47,10 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
         game.End();
 
             EndGame();
-
-             
     }
 
     /// <summary>
-    /// 
+    /// Prints the wiiner of the game
     /// </summary>
     public void EndGame()
     {
@@ -63,9 +60,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
     }
 
     /// <summary>
-    /// *******************************************************
-    /// 
-    /// *******************************************************
+    /// This method takes 3 choices from the player in each turn and prints them. 
     /// </summary>
     private void GetPlayerChoice()
     {
@@ -139,7 +134,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
 
     /// <summary>
     /// *******************************************************
-    /// 
+    /// At the end of the round the choices are shown.
     /// *******************************************************
     /// </summary>
     private void ShowChoices()
@@ -154,7 +149,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
 
     /// <summary>
     /// *******************************************************
-    /// 
+    /// The result for the round is shown to the user.
     /// *******************************************************
     /// </summary>
     private void ShowResult()
@@ -171,7 +166,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
 
     /// <summary>
     /// *******************************************************
-    /// 
+    /// Sets the title, window size, colours and clears the console.
     /// *******************************************************
     /// </summary>
     private void SetupScreen()
@@ -189,7 +184,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
 
     /// <summary>
     /// *******************************************************
-    /// 
+    /// Asks fot the user's name, begins the game.
     /// *******************************************************
     /// </summary>
     private void StartGame()

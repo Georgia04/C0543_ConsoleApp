@@ -18,7 +18,15 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
         PAPER,
         SCISSORS,
     }
-     class RPS_Game
+    /// <summary>
+    /// This class runs the game
+    /// The computer chooses a number, and so does the user
+    /// Depending on the outcome a number will be added
+    /// At the end of the game, the winner will be displayed
+    /// with the appropriate symbol.
+    /// Author: Georgia
+    /// </summary>
+    public class RPS_Game
     {
         public const string COMPUTER_NAME = "Computer";
 
@@ -42,7 +50,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
 
         /// <summary>
         /// *******************************************************
-        /// 
+        /// Ends the game
         /// *******************************************************
         /// </summary>
         public void End()
@@ -51,7 +59,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
 
         /// <summary>
         /// *******************************************************
-        /// 
+        /// Computer chooses a number between 1-3
         /// *******************************************************
         /// </summary>
         public void GetComputerChoice()
@@ -74,7 +82,8 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
 
         /// <summary>
         /// *******************************************************
-        /// 
+        /// This will dertemine whether the computer has won / drawn
+        /// or the player has won / drawn
         /// *******************************************************
         /// </summary>
         public void WorkoutWinner()
@@ -128,6 +137,11 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
             }
 
         }
+
+        /// <summary>
+        /// The scores are compared, the result is shown with an image.
+        /// </summary>
+
         public void GameWinner() 
         {
             if (PlayerScore > ComputerScore)
@@ -145,12 +159,9 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
                 Console.WriteLine("It's a draw");
                 Images.DrawSmile();
             }
-
         }
-    }
-            
-                
-            }
+     }
+}
 
         
     

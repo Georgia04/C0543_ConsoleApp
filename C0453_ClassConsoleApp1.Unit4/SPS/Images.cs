@@ -4,11 +4,16 @@ using System.Text;
 
 namespace C0453_ClassConsoleApp1.Unit4.SPS
 {
+    /// <summary>
+    /// This class will create the images of the game.
+    /// Authosr: Georgia
+    /// </summary>
     class Images
     {
         /// <summary>
         /// *******************************************************
-        /// 
+        /// Draw scissors will write these lines which will create scissors
+        /// when ran.
         /// *******************************************************
         /// </summary>
         public static void DrawScissors(int x, int y)
@@ -40,7 +45,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
 
         /// <summary>
         /// *******************************************************
-        /// 
+        /// When the user chooses rock this rock will be drawn.
         /// *******************************************************
         /// </summary>
         public static void DrawStone(int x, int y)
@@ -76,7 +81,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
 
         /// <summary>
         /// *******************************************************
-        /// 
+        /// When user chooses paper, the paper will be printed in the console.
         /// *******************************************************
         /// </summary>
         public static void DrawPaper(int x, int y)
@@ -112,7 +117,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
 
         /// <summary>
         /// *******************************************************
-        /// 
+        /// This will draw a smile when it is called
         /// *******************************************************
         /// </summary>
         public static void DrawSmile()
@@ -131,7 +136,7 @@ namespace C0453_ClassConsoleApp1.Unit4.SPS
 
         /// <summary>
         /// *******************************************************
-        /// 
+        /// This will draw a thumbs up when it is called
         /// *******************************************************
         /// </summary>
         public static void DrawThumbsUp()

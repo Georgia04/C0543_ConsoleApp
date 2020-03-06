@@ -27,7 +27,7 @@ namespace C0453_ClassConsoleApp1.Unit4
             //TestGame();
            //TestBMI(); //4.4
           //TestMotelBooking(); //5.6
-          TestBubbleSort(); //5.4
+          //TestBubbleSort(); //5.4
         }
 
         private static void TestBMI() 
