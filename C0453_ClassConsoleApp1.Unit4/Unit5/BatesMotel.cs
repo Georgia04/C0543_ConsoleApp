@@ -152,7 +152,6 @@ namespace C0453_ClassConsoleApp1.Unit4.Unit5
 
                 Console.WriteLine("All rooms have been vacated!");
                 Console.WriteLine(Console.ReadLine());
-           }
-        
+            }
     }
 } 
